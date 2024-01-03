@@ -19,12 +19,16 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.cambiarValor()
 
   }
 
-  cambiarValor() {
-    console.log(this.checkbox.asReadonly())
+  cambiarValor(event: any) {
+    if (event === false) {
+      this.url = './assets/Moon_fill.svg';
+    }
+    else {
+      this.url = './assets/Moon_fill_light.svg';
+    }
   }
 
 }
