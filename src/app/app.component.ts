@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   title = 'homepage-challenge';
   url: string = './assets/Moon_fill_light.svg';
   checkbox = signal(true);
-
+  label_top = '😎 Simple way to communicate';
 
 
   ngOnInit(): void {
