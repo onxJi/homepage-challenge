@@ -19,8 +19,6 @@ export class AppComponent implements OnInit {
   theme: string = './assets/Sun_fill.svg';
   checkbox = signal(true);
   label_top = '😎 Simple way to communicate';
-
-
   ngOnInit(): void {
 
   }
@@ -41,8 +39,5 @@ export class AppComponent implements OnInit {
     }
   }
 
-  openMenu() {
-    this.showNavbar = !this.showNavbar;
-  }
 
 }
